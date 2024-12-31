@@ -1,0 +1,31 @@
+/* 가상 선택자(Pseudo class selcetor) */
+
+a:link {font-size: 2em;}
+a:visited {color: rgb(187, 255, 61);}
+a:hover {color: rgb(0, 255, 170);}
+a:active {color: crimson;}
+
+input[type="text"]:focus {background-color: darksalmon;}
+
+input[type="radio"]:checked {background-color: slateblue;}
+
+input[type="text"]:enabled {border: 3px solid orange}
+input[type="text"]:disabled {border: 3px solid rgb(0, 17, 255)}
+
+ul > li:first-child {font-size: 1.5em;}/* 자식 중 첫번쨰 */
+ul > li:last-child {font-size: 2em;}/* 자식 중 마지막 */
+ul > li:nth-child(2) {font-size: 4em;}/* 자식 중 2번째 */
+ul > li:nth-last-child(2) {color: burlywood;}/* 자식 중 뒤에서 2번째 */
+
+ul > li:first-of-type {color: rgb(231, 109, 255);}/* li타입 중 첫번째 */
+ul > li:last-of-type {color: rgb(197, 255, 171);}/* li타입 중 마지막 */
+ul > li:nth-of-type(1) {border: 1px solid rgb(171, 198, 255);}/* li타입 중 첫번째 */
+ul > li:nth-last-of-type(1) {border: 1px solid rgb(171, 198, 255);}/* li타입 중 뒤에서 첫번쨰 */
+
+div:not(input) {font-style: italic;}/* div 자손 중 input 아닌것 */
+
+p::first-letter {font-size: 2em; color: rgb(47, 0, 255);}/*첫번째 문자*/
+p::first-line {text-decoration: underline;}/*첫번째 라인*/
+p::before {content: '[시작]';}/* 컨텐츠 앞에 추가 */
+p::after {content: '[끝]';}/* 컨텍츠 뒤에 추가 */
+p::selection {color: rgb(255, 127, 118);}/* 마우스로 드래그된 것 */

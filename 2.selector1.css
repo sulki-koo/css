@@ -1,0 +1,50 @@
+/*
+    selecotr
+*/
+/* 전체 요소 셀렉터*/
+* {font-size: 25px;}
+
+/* 태그 셀렉터*/
+ul {border: 1px solid rgb(82, 255, 29);}
+li {list-style: none;}
+
+/* id 셀렉터*/
+#div1 {background-color: rgb(191, 250, 240);}
+
+/* class 셀렉터*/
+.odd {font-weight: bold;}
+
+/* 속성 셀렉터 - 타입 속성이 존재*/
+input[type]{color:rgb(142, 170, 77);}
+
+/* 속성 셀렉터 - 타입 속성 값 동일*/
+input[type="text"]{color:rgb(179, 15, 255);}
+
+/* 속성 셀렉터 - 타입 속성 값 포함 */
+input[type~="password"]{color:rgb(206, 209, 7);}
+
+/* 속성 셀렉터 - 타입 속성 값 포함 */
+input[type|="datetime-local"]{color:rgb(255, 117, 193);}
+
+/* 속성 셀렉터 - 타입 속성 값 시작 */
+input[type^="date"]{color:rgb(65, 98, 172);}
+
+/* 속성 셀렉터 - 타입 속성 값 끝*/
+input[type$="word"]{color:rgb(91, 255, 15);}
+
+/* 속성 셀렉터 - 타입 속성 값 포함*/
+input[type*="time"]{color:rgb(255, 144, 99);}
+
+/* 자식 셀렉터 - 직계 자식 */
+div > ul {border-width: 5px;}
+div > div> div {font-size: 40px;}
+
+/* 후손 셀렉터 - 자손 모두 */
+div ul { background-color: rgb(35, 163, 223);}
+div ul li {text-decoration: underline;}
+
+/* 인접 형제 셀렉터 */
+ul+div {background-color: rgb(132, 166, 189);}
+
+/* 일반 형제 셀렉터 */
+input[type="text"]~ input {background-color: greenyellow;}
