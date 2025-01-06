@@ -17,6 +17,7 @@ header {
 h1 {
     width: 600px;
     color: white;
+    text-shadow: 3px 3px 2px greenyellow, 0 0 5px rgb(184, 221, 20);
     font-size: 5em;
     padding-left: 20px;
     float:left;
@@ -57,6 +58,7 @@ h1 {
     display: inline-block;
     list-style-type: none;
     border-radius: 25px 25px 0 0;
+    box-shadow: 5px -5px;
 }
 
 li:hover {
